@@ -1,15 +1,15 @@
 {
   "name": "lynx-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A basic boilerplate for Express.js",
   "main": "index.js",
   "scripts": {
     "start": "node ./dist/app.js",
     "dev": "nodemon app.ts",
     "build": "npx tsc & npx prisma generate"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["javascript", "typescript", "node", "nodejs", "node.js", "express", "prisma", "boilerplate", "lynx", "npm"],
+  "author": "Vesal J.",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.1.1",

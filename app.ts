@@ -18,5 +18,5 @@ app.use(express.static('public'))
 app.use(indexRouter)
 
 app.listen(process.env.PORT, () => {
-  console.log(`Running on port ${process.env.PORT}`);
+  console.log(`[⚡ Lynx] Running on http://localhost:${process.env.PORT}`);
 });
