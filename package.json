@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./dist/app.js",
     "dev": "nodemon app.ts",
-    "build": "npx tsc & npx prisma generate"
+    "build": "npx tsc"
   },
   "keywords": ["javascript", "typescript", "node", "nodejs", "node.js", "express", "prisma", "boilerplate", "lynx", "npm"],
   "author": "Vesal J.",
