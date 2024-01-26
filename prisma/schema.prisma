@@ -9,34 +9,3 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
-
-model Users {
-  id String @id @default(cuid())
-  mobile String
-  name String
-  password String
-  role String
-  status String
-  gyms Gyms[]
-}
-
-model Gyms {
-  id String @id @default(cuid())
-  name String
-  address String @db.Text
-  status String
-  description String @db.Text
-  manager Users @relation(fields: [managerId], references: [id])
-  managerId String
-  layouts Layouts[]
-}
-
-model Layouts {
-  id String @id @default(cuid())
-  gymId String
-  gym Gyms @relation(fields: [gymId], references: [id])
-}
-
-model LayoutTimes {
-  id String @id @default(cuid())
-}
