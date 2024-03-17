@@ -1,6 +1,9 @@
 import { Router } from "express";
+import UsersModule from '../modules/users/index'
 
 const router = Router()
+
+router.use('/users', UsersModule)
 
 router.get('/', async (req, res) => {
     res.send('Index Router')

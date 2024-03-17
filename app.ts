@@ -13,10 +13,12 @@ app.use(
   })
 );
 
+app.use(express.json())
 app.use(express.static('public'))
 
+// define all of routes and module imports in index router
 app.use(indexRouter)
 
 app.listen(process.env.PORT, () => {
-  console.log(`[⚡ Lynx] Running on http://localhost:${process.env.PORT}`);
+  console.log(`[⚡ Lynx] Running on http://localhost:${process.env.PORT || 3000}`);
 });
