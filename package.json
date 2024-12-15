@@ -8,7 +8,18 @@
     "dev": "nodemon app.ts",
     "build": "npx tsc"
   },
-  "keywords": ["javascript", "typescript", "node", "nodejs", "node.js", "express", "prisma", "boilerplate", "lynx", "npm"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "node",
+    "nodejs",
+    "node.js",
+    "express",
+    "prisma",
+    "boilerplate",
+    "lynx",
+    "npm"
+  ],
   "author": "Vesal J.",
   "license": "ISC",
   "dependencies": {
@@ -16,10 +27,12 @@
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.16",
     "@types/dotenv": "^8.2.0",
+    "@types/ejs": "^3.1.5",
     "@types/express": "^4.17.17",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "ejs": "^3.1.10",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
     "prisma": "^5.1.1",
